@@ -4,6 +4,10 @@ Paste JSON, get types. Select JSON in any editor (or copy it), run one command, 
 
 ![JSON Typer](images/icon.png)
 
+[![Open VSX version](https://img.shields.io/open-vsx/v/kingaikits/json-typer?label=Open%20VSX)](https://open-vsx.org/extension/kingaikits/json-typer) [![Open VSX downloads](https://img.shields.io/open-vsx/dt/kingaikits/json-typer)](https://open-vsx.org/extension/kingaikits/json-typer)
+
+**Install:** search "JSON Typer" in the Extensions view of VSCodium, Cursor, Windsurf, Eclipse Theia or any editor that uses Open VSX, or run `ext install kingaikits.json-typer`. Listing: https://open-vsx.org/extension/kingaikits/json-typer
+
 ## How to use
 
 1. Select some JSON (or leave nothing selected to use the whole file), or copy JSON to the clipboard.
