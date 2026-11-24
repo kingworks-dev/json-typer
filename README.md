@@ -6,7 +6,12 @@ Paste JSON, get types. Select JSON in any editor (or copy it), run one command, 
 
 [![Open VSX version](https://img.shields.io/open-vsx/v/kingaikits/json-typer?label=Open%20VSX)](https://open-vsx.org/extension/kingaikits/json-typer) [![Open VSX downloads](https://img.shields.io/open-vsx/dt/kingaikits/json-typer)](https://open-vsx.org/extension/kingaikits/json-typer)
 
-**Install:** search "JSON Typer" in the Extensions view of VSCodium, Cursor, Windsurf, Eclipse Theia or any editor that uses Open VSX, or run `ext install kingaikits.json-typer`. Listing: https://open-vsx.org/extension/kingaikits/json-typer
+**Install:**
+
+- **VSCodium, Cursor, Windsurf, Eclipse Theia and other Open VSX editors:** search "JSON Typer" in the Extensions view, or run `ext install kingaikits.json-typer`.
+- **VS Code:** download the [.vsix from Open VSX](https://open-vsx.org/api/kingaikits/json-typer/1.0.0/file/kingaikits.json-typer-1.0.0.vsix), then Extensions view, `...` menu, **Install from VSIX...** (or `code --install-extension kingaikits.json-typer-1.0.0.vsix`).
+
+Listing: https://open-vsx.org/extension/kingaikits/json-typer. Want Zod, Python, Rust, C# and Kotlin too? [Get Pro ($4.99, one-time)](https://buy.stripe.com/28E3co6zt7Ssew2cmT0x53B).
 
 ## How to use
 
