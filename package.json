@@ -1,0 +1,48 @@
+{
+  "name": "json-typer",
+  "displayName": "JSON Typer: JSON to TypeScript, Go, Zod, Python, Rust, C#, Kotlin",
+  "description": "Paste JSON, get types. Generates TypeScript, Go, JSON Schema free; Zod, Python (dataclass/Pydantic), Rust serde, C# and Kotlin with Pro. Offline, no network.",
+  "version": "1.0.0",
+  "publisher": "kingaikits",
+  "license": "MIT",
+  "icon": "images/icon.png",
+  "repository": { "type": "git", "url": "https://github.com/kingworks-dev/json-typer.git" },
+  "homepage": "https://github.com/kingworks-dev/json-typer#readme",
+  "bugs": { "url": "https://github.com/kingworks-dev/json-typer/issues" },
+  "engines": { "vscode": "^1.75.0" },
+  "categories": ["Programming Languages", "Other"],
+  "keywords": ["json", "typescript", "interface", "zod", "go", "struct", "quicktype", "pydantic", "dataclass", "rust", "serde", "kotlin", "csharp", "json schema", "paste json as code"],
+  "main": "./extension.js",
+  "activationEvents": [],
+  "contributes": {
+    "commands": [
+      { "command": "jsonTyper.fromSelection", "title": "JSON Typer: Generate Types from Selection or File" },
+      { "command": "jsonTyper.fromClipboard", "title": "JSON Typer: Paste Clipboard JSON as Types" },
+      { "command": "jsonTyper.toTypeScript", "title": "JSON Typer: To TypeScript Interfaces" },
+      { "command": "jsonTyper.toGo", "title": "JSON Typer: To Go Structs" },
+      { "command": "jsonTyper.toZod", "title": "JSON Typer: To Zod Schema (Pro)" },
+      { "command": "jsonTyper.activatePro", "title": "JSON Typer: Activate Pro Key" },
+      { "command": "jsonTyper.buyPro", "title": "JSON Typer: Get Pro ($4.99, one-time)" },
+      { "command": "jsonTyper.status", "title": "JSON Typer: Show License Status" }
+    ],
+    "menus": {
+      "editor/context": [
+        { "command": "jsonTyper.fromSelection", "when": "editorLangId == json || editorLangId == jsonc || editorHasSelection", "group": "9_cutcopypaste@99" }
+      ]
+    },
+    "configuration": {
+      "title": "JSON Typer",
+      "properties": {
+        "jsonTyper.rootName": { "type": "string", "default": "Root", "description": "Name given to the top-level type." },
+        "jsonTyper.typescriptStyle": { "type": "string", "enum": ["interface", "type"], "default": "interface", "description": "Emit TypeScript interfaces or type aliases." },
+        "jsonTyper.readonlyFields": { "type": "boolean", "default": false, "description": "Mark TypeScript fields readonly." },
+        "jsonTyper.output": { "type": "string", "enum": ["newTab", "insert"], "default": "newTab", "description": "Show the result in a new tab beside the editor, or replace the current selection." }
+      }
+    }
+  },
+  "scripts": {
+    "test": "node --test test/unit.test.js",
+    "test:host": "node test/host/run.js",
+    "package": "npx --yes @vscode/vsce package"
+  }
+}

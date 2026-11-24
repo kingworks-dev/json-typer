@@ -1,0 +1,6 @@
+test/**
+.vscode/**
+**/*.map
+.gitignore
+node_modules/**
+build_icon.py
